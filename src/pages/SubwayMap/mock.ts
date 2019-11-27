@@ -6,6 +6,7 @@ const data = {
     {
       id: 'bright-top',
       label: '光明顶',
+      shape: 'station',
       row: 4.5,
       col: 2.5,
       labelCfg: {
@@ -16,6 +17,7 @@ const data = {
     {
       id: 'shaolin',
       label: '少林路',
+      shape: 'station',
       row: 4.5,
       col: 3.5,
       labelCfg: {
@@ -26,6 +28,7 @@ const data = {
     {
       id: 'hongxiang',
       label: '红翔高级技工学院',
+      shape: 'station',
       row: 4.5,
       col: 3.5,
       labelCfg: {

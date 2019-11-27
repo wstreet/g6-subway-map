@@ -5,7 +5,11 @@ const config = {
     stroke: '#ccc',
     lineWidth: 2
   },
-  nodeFontSize: 10
+  nodeFontSize: 10,
+
+
+  ySpan: 50,
+  xSpan: 50
 }
 
 
