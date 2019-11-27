@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <% for (let css in htmlWebpackPlugin.files.css) { %>
+      <link href="/<%=htmlWebpackPlugin.files.css[css] %>" rel="stylesheet">
+    <% } %>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <% for (let chunk in htmlWebpackPlugin.files.chunks) { %>
+      <script type="text/javascript" src="/<%=htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
+    <% } %>
+  </body>
+</html>

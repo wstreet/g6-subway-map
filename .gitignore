@@ -1,0 +1,38 @@
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+*.iml
+.idea/
+.vscode/
+.ipr
+.iws
+*~
+~*
+*.diff
+*.patch
+*.bak
+.DS_Store
+Thumbs.db
+.project
+.*proj
+.svn/
+*.swp
+*.swo
+*.pyc
+*.pyo
+npm-debug.log
+dist
+*.json.gz
+**/runtime.js
+yarn*
+**/frame/index.jsx.js
+/dev/proxy.js
+package-lock.json
