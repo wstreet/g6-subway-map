@@ -26,7 +26,6 @@ class index extends React.Component {
   public registerStation() {
     G6.registerNode('station', {
       draw(cfg, group) {
-        console.log(cfg, group)
         const { row, col } = cfg
         const shape = group.addShape('circle', {
           attrs: {
@@ -39,11 +38,7 @@ class index extends React.Component {
             stroke: '#ccc'
           }
         })
-        // debugger
         if (cfg.label) { // 如果有文本
-          // 如果需要复杂的文本配置项，可以通过 labeCfg 传入
-          // const style = (cfg.labelCfg && cfg.labelCfg.style) || {};
-          // style.text = cfg.label;
           group.addShape('text', {
             attrs: {
               x: 0, // 居中
@@ -58,20 +53,6 @@ class index extends React.Component {
         }
         return shape
       },
-
-      // shapeType: 'circle', // group.addShape 时需要指定的类型
-      // getShapeStyle(cfg) {
-      //   const { row, col } = cfg
-      //   return {
-      //     // ...cfg,
-      //     r: 6,
-      //     x: col * config.xUnit,
-      //     y: -row * config.yUnit,
-      //     lineWidth: 2,
-      //     fill: '#fff',
-      //     stroke: '#ccc'
-      //   }
-      // }
     }, 'circle')
   }
 

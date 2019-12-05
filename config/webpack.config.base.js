@@ -26,7 +26,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'React app',
       template: paths.appHtml,
-      inject: false,
+      // inject: true,
     })
   ]
 }
