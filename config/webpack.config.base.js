@@ -24,7 +24,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'React app',
+      title: 'B市地铁线路图',
       template: paths.appHtml,
       // inject: true,
     })
